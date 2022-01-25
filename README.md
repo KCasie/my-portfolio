@@ -1,2 +1,2 @@
 # my-portfolio
-Made with HTML, CSS, and vanilla JS(coming soon)
+Made with HTML, CSS, and vanilla JS (coming soon)
