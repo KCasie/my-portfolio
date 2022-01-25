@@ -1,2 +1,2 @@
 # my-portfolio
-Finally making a portfolio for myself!
+Made with HTML, CSS, and vanilla JS(coming soon)
