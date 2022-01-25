@@ -14,28 +14,11 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   background-color: pink;
   font-family: 'Press Start 2P', cursive;
-}
-
-/* About Me */
-
-.About {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-h1 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    color: white;
-    font-family: 'Inconsolata', monospace;
-    justify-content: center;
-    align-items: center;
+  padding: 2px;
 }
 
 li {
@@ -43,7 +26,14 @@ li {
   display: inline-block;
 }
 
-/* file.exe bar */
+/* Home.exe Section */
+
+.About {
+  font-family: 'Inconsolata', monospace;
+  color: white;
+}
+
+/* home.exe bar */
 
 .containerbar {
   background-color: rgba(233, 204, 250, 0.781);
@@ -58,6 +48,8 @@ li {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
 }
+
+/* container below bar */
 
 .wrapperone {
   display: flex;
@@ -81,39 +73,32 @@ li {
   margin: 1% 0% 10% 85%;
 }
 
-img {
+.pinkfolder {
   max-width: 40%;
   height: auto;
   padding-top: 1%;
 }
 
-h4 {
+.catpics {
   color: white;
   text-align: center;
   font-family: 'Inconsolata', monospace;
   margin-top: 0;
 }
 
-/* html tags */
+/* links */
 
 a {
   color: white;
   text-decoration: none;
 }
 
+/* Button */
+
 .i {
   color: white;
 }
 
-p, .column {
-    margin: 7px;
-    color: white;
-    font-family: 'Inconsolata', monospace;
-    background-color: rgb(160, 116, 91);
-    border-radius: 7px solid black;
-}
-
-/* Button */
 .button-30 {
   align-items: center;
   appearance: none;
