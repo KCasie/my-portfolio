@@ -14,7 +14,7 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: pink;
   font-family: 'Press Start 2P', cursive;
 }
@@ -43,6 +43,22 @@ li {
   display: inline-block;
 }
 
+/* file.exe bar */
+
+.containerbar {
+  background-color: rgba(233, 204, 250, 0.781);
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  margin: 7% 17% 0% 17%;
+  border-width: 7px 7px 0px 7px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 2%;
+  padding-bottom: 1px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
 .wrapperone {
   display: flex;
   flex-direction: column;
@@ -50,9 +66,35 @@ li {
   text-align: center;
   padding: 10%;
   background-color: rgba(45, 35, 66, 0.3);
-  margin: 10%;
-  border: 7px solid white
+  margin: 0% 17% 10% 17%;
+  border: 7px inset white;
+  position: relative;
 }
+
+/* Desktop */
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 1% 0% 10% 85%;
+}
+
+img {
+  max-width: 40%;
+  height: auto;
+  padding-top: 1%;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  margin-top: 0;
+}
+
+/* html tags */
 
 a {
   color: white;
