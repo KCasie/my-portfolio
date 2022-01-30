@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1516166328576-82e16a127024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: pink;
+  font-family: 'Press Start 2P', cursive;
+  padding: 2px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* Home.exe Section */
+
+.About {
+  font-family: 'Inconsolata', monospace;
+  color: white;
+}
+
+/* home.exe bar */
+
+.containerbar {
+  background-color: rgba(233, 204, 250, 0.781);
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  margin: 7% 17% 0% 17%;
+  border-width: 7px 7px 0px 7px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 2%;
+  padding-bottom: 1px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+/* container below bar */
+
+.wrapperone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  background-color: rgba(45, 35, 66, 0.3);
+  margin: 0% 17% 10% 17%;
+  border: 7px inset white;
+  position: relative;
+}
+
+/* Desktop */
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 1% 0% 10% 85%;
+}
+
+.pinkfolder {
+  max-width: 40%;
+  height: auto;
+  padding-top: 1%;
+}
+
+.catpics {
+  color: white;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  margin-top: 0;
+}
+
+/* links */
+
+a {
+  color: white;
+  text-decoration: none;
+}
