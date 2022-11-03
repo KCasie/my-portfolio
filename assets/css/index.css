@@ -3,20 +3,23 @@ html {
 }
 
 body {
-  background-size: cover;
   margin: 0;
   min-height: 100vh;
+  font-family: 'Inconsolata', monospace;
   background: url(https://images.unsplash.com/photo-1516166328576-82e16a127024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80) no-repeat;
   background-size: cover;
+  color: white;
+}
+
+/* DRY */
+
+nav, .homeWrapper, .projectWrapper, .desktop, .projectWrapper div {
+  display: flex;
 }
 
 /* NAVBAR */
 
 nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
   background-color: pink;
   font-family: 'Press Start 2P', cursive;
   padding: 2px;
@@ -27,19 +30,22 @@ li {
   display: inline-block;
 }
 
+.far {
+  color: #1c4656;
+}
+
 /* Home.exe Section */
 
-.About {
-  font-family: 'Inconsolata', monospace;
-  color: white;
+p {
+  margin: 0;
+  margin-bottom: 18px;
 }
 
 /* home.exe bar */
 
 .containerbar {
-  background-color: rgba(233, 204, 250, 0.781);
-  color: white;
   font-family: 'Press Start 2P', cursive;
+  background-color: rgba(233, 204, 250, 0.781);
   margin: 7% 17% 0% 17%;
   border-width: 7px 7px 0px 7px;
   border-style: solid;
@@ -53,26 +59,21 @@ li {
 /* container below bar */
 
 .homeWrapper {
-  display: flex;
+  background-color: rgba(45, 35, 66, 0.3);
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10%;
-  background-color: rgba(45, 35, 66, 0.3);
+  padding: 10% 10% 11% 10%;
   margin: 0% 17% 10% 17%;
   border: 7px inset white;
-  position: relative;
 }
 
 .projectWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 3% 9%;
   background-color: rgba(45, 35, 66, 0.3);
+  flex-wrap: wrap;
+  padding: 3% 4%;
   margin: 0% 27% 10% 27%;
   border: 7px inset white;
-  position: relative;
 }
 
 .projects .padded {
@@ -82,7 +83,6 @@ li {
 /* Desktop */
 
 .desktop {
-  display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -91,34 +91,26 @@ li {
 
 .pinkfolder {
   max-width: 40%;
-  height: auto;
   padding-top: 1%;
 }
 
 .catpics {
   color: white;
   text-align: center;
-  font-family: 'Inconsolata', monospace;
   margin-top: 0;
 }
 
 /* links */
 
 a {
-  color: white;
   text-decoration: none;
 }
 
 li {
-  color: white;
   cursor: pointer;
 }
 
 /* Button */
-
-.i {
-  color: white;
-}
 
 .button-30 {
   align-items: center;
@@ -126,22 +118,17 @@ li {
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 48px;
   justify-content: center;
   line-height: 1;
-  list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
   position: relative;
-  text-align: left;
-  text-decoration: none;
   transition: box-shadow .15s,transform .15s;
   user-select: none;
   -webkit-user-select: none;
@@ -165,30 +152,15 @@ li {
   transform: translateY(2px);
 }
 
-.hidden {
-  display: none;
-}
-
-
 /* projects.exe extras */
 
 .fleximg {
   width: 100%;
 }
 
-h4 {
-  color: white;
-  font-family: 'Inconsolata', monospace;
-}
-
 .projectWrapper div {
-  display: flex;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
-
-/* .projectWrapper {
-  overflow-x: hidden;
-} */
 
 .scroller {
   /* width: 300px; */
@@ -201,4 +173,10 @@ h4 {
 .one, .two, .three, .four {
   flex-direction: column;
   align-items: center;
+}
+
+/* javascript extras */
+
+.hidden {
+  display: none;
 }
