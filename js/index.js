@@ -1,6 +1,7 @@
 document.querySelector('.home').addEventListener('click', toggleHome)
 document.querySelector('.view').addEventListener('click', toggleView);
 document.querySelector('.edit').addEventListener('click', toggleProjects);
+// document.querySelector('').addEventListener('click', toggleView)
 
 let home = document.querySelector('.homeWindow');
 let view = document.querySelector('.view');
