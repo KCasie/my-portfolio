@@ -6,7 +6,8 @@ body {
   background-size: cover;
   margin: 0;
   min-height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1516166328576-82e16a127024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+  background: url(https://images.unsplash.com/photo-1516166328576-82e16a127024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80) no-repeat;
+  background-size: cover;
 }
 
 /* NAVBAR */
@@ -51,7 +52,7 @@ li {
 
 /* container below bar */
 
-.wrapperone {
+.homeWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,6 +62,21 @@ li {
   margin: 0% 17% 10% 17%;
   border: 7px inset white;
   position: relative;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3% 9%;
+  background-color: rgba(45, 35, 66, 0.3);
+  margin: 0% 27% 10% 27%;
+  border: 7px inset white;
+  position: relative;
+}
+
+.projects .padded {
+  margin: 7% 27% 0% 27%;
 }
 
 /* Desktop */
@@ -91,6 +107,11 @@ li {
 a {
   color: white;
   text-decoration: none;
+}
+
+li {
+  color: white;
+  cursor: pointer;
 }
 
 /* Button */
@@ -142,4 +163,42 @@ a {
 .button-30:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* projects.exe extras */
+
+.fleximg {
+  width: 100%;
+}
+
+h4 {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+}
+
+.projectWrapper div {
+  display: flex;
+  padding-bottom: 2%;
+}
+
+/* .projectWrapper {
+  overflow-x: hidden;
+} */
+
+.scroller {
+  /* width: 300px; */
+  height: 50vh;
+  overflow-y: scroll;
+  /* scrollbar-color: rebeccapurple green; */
+  /* scrollbar-width: thin; */
+}
+
+.one, .two, .three, .four {
+  flex-direction: column;
+  align-items: center;
 }
