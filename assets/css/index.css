@@ -173,19 +173,8 @@ span {
 }
 
 .scroller {
-  /* width: 300px; */
   height: 50vh;
   overflow-y: scroll;
-  /* scrollbar-width: thin; */
-  box-sizing: content-box;
-}
-
-*::-webkit-scrollbar {
-  background: rgba(255, 255, 255, 0.329);
-}
-
-*::-webkit-scrollbar-thumb {
-  background: rgba(255, 192, 203, 0.774);
 }
 
 .one, .two, .three, .four {
@@ -202,9 +191,6 @@ span {
 /* media queries */
 
 @media all and (max-width: 900px) {
-  /* .homeWindow {
-    height: 50vh;
-  } */
   .desktop {
     margin: 0 auto;
     position: relative;
