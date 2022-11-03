@@ -110,6 +110,11 @@ li {
   cursor: pointer;
 }
 
+span {
+  display: none;
+  color: white;
+}
+
 /* Button */
 
 .button-30 {
@@ -135,7 +140,12 @@ li {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
+  margin: 0 6px;
+  font-size: 1rem;
+}
+
+.meow {
+  font-size: 1.2rem;
 }
 
 .button-30:focus {
@@ -166,8 +176,16 @@ li {
   /* width: 300px; */
   height: 50vh;
   overflow-y: scroll;
-  /* scrollbar-color: rebeccapurple green; */
   /* scrollbar-width: thin; */
+  box-sizing: content-box;
+}
+
+*::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.329);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 192, 203, 0.774);
 }
 
 .one, .two, .three, .four {
@@ -179,4 +197,48 @@ li {
 
 .hidden {
   display: none;
+}
+
+/* media queries */
+
+@media all and (max-width: 900px) {
+  /* .homeWindow {
+    height: 50vh;
+  } */
+  .desktop {
+    margin: 0 auto;
+    position: relative;
+    padding: 2.5% 0;
+  }
+  #websection img {
+    display: none;
+  }
+  .containerbar {
+    margin-top: 0;
+    margin: 0 8%;
+  }
+  .homeWrapper, .projectWrapper {
+    margin: 0 8%;
+  }
+  .homeWrapper {
+    padding: 20% 5%;
+  }
+  .projects .padded {
+    margin: 0 8%;
+  }
+  span {
+    display: block;
+  }
+  .catpics {
+    margin: 0;
+  }
+  .scroller {
+    height: 60vh;
+  }
+}
+
+@media all and (max-width: 476px) {
+  ul {
+    padding: 0 9px;
+  }
 }
