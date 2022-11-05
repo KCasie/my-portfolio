@@ -1,16 +1,23 @@
-document.querySelector('.home').addEventListener('click', toggleHome)
+document.querySelector('.home').addEventListener('click', toggleHome);
 document.querySelector('.view').addEventListener('click', toggleView);
 document.querySelector('.edit').addEventListener('click', toggleProjects);
-// document.querySelector('').addEventListener('click', toggleView)
+document.querySelector('.help').addEventListener('click', toggleHelp);
+document.querySelector('.meow').addEventListener('click', toggleHelp);
+document.querySelector('.main').addEventListener('click', toggleXHome);
+document.querySelector('.viewX').addEventListener('click', toggleXView);
+document.querySelector('.projectX').addEventListener('click', toggleXProject);
+document.querySelector('.contactX').addEventListener('click', toggleXContact);
 
 let home = document.querySelector('.homeWindow');
 let view = document.querySelector('.viewSection');
 let projects = document.querySelector('.projects');
+let help = document.querySelector('.contact');
 
 function toggleHome() {
     home.classList.toggle('hidden');
     view.classList.add('hidden');
     projects.classList.add('hidden');
+    help.classList.add('hidden');
     // document.querySelector('.heading').textContent = 'Home.exe';
 }
 
@@ -18,6 +25,7 @@ function toggleView() {
     home.classList.add('hidden');
     projects.classList.add('hidden');
     view.classList.toggle('hidden');
+    help.classList.add('hidden');
     // document.querySelector('.heading').textContent = 'View.exe';
     // add selfie img
     // document.querySelector('.homeWrapper').style.background = 'url("https://64.media.tumblr.com/c4304470bdf5eb222434fb4c4fd50e8e/27b62ba9d1aa22f6-80/s500x750/7fc5d167281b2cc79c70f6644ebe207dd3d7c781.png")';
@@ -29,4 +37,50 @@ function toggleProjects() {
     home.classList.add('hidden');
     view.classList.add('hidden');
     projects.classList.toggle('hidden');
+    help.classList.add('hidden');
 };
+
+function toggleHelp() {
+    home.classList.add('hidden');
+    view.classList.add('hidden');
+    projects.classList.add('hidden');
+    help.classList.toggle('hidden');
+}
+
+// program to display the date
+// get local machine date time
+const date = new Date();
+
+// get the date as a string
+const n = date.toDateString();
+
+// get the time as a string
+const time = date.toLocaleTimeString();
+
+// display date
+document.querySelector('.date').textContent = `${n}`;
+
+// console.log('Date: ' + n);
+
+// display time
+document.querySelector('.time').textContent = `${time}`;
+
+// console.log('Time: ' + time)
+
+
+function toggleXHome() {
+    // close window
+    home.classList.toggle('hidden');
+}
+
+function toggleXView() {
+    view.classList.toggle('hidden');
+}
+
+function toggleXProject() {
+    projects.classList.toggle('hidden');
+}
+
+function toggleXContact() {
+    help.classList.toggle('hidden');
+}
