@@ -20,7 +20,11 @@
                 <li class="home">Home |</li>
                 <li class="view">View |</li>
                 <li class="edit">Edit |</li>
-                <li>Help</li>
+                <li class="help">Help</li>
+            </ul>
+            <ul class="local">
+                <li class="date"></li>
+                <li class="time"></li>
             </ul>
         </nav>
     </header>
@@ -34,8 +38,9 @@
         </div>
     </aside>
     <main class="homeWindow">
-        <div class="containerbar">
+        <div class="containerbar extra">
             <h3 class="heading">Home.exe</h3>
+            <i class="fa-solid fa-rectangle-xmark main"></i>
         </div>
         <div class="homeWrapper">
             <h1>Hi, I'm KCasie. 
@@ -46,8 +51,9 @@
     </main>
     <!-- VIEW.EXE -->
     <section class="viewSection hidden">
-        <div class="containerbar short">
+        <div class="containerbar short extra">
             <h3 class="heading">View.exe</h3>
+            <i class="fa-solid fa-rectangle-xmark viewX"></i>
         </div>
         <div class="viewWrapper">
             <div class="shortBio">
@@ -55,27 +61,36 @@
                 <span class="about">- A coffee aficionado who loves playing all sorts of games and admiring different types of cats</span>
             </div>
             <p class="description">
-                Who remembers <span class="myspace">MySpace</span>? Without realizing it, that's where my journey started. I love tinkering with code for profile layouts. The same goes for website layouts! Growing up, I noticed a lot of problem-solving on my own. Well, that's not
-                true. Countless people shared their solutions on the internet. They are the reason why I'm here as a developer.
+                Who remembers <span class="myspace">MySpace</span>? Without realizing it, that's where my journey started. I love tinkering with code! Countless people shared their stories on the internet. They are the reason why I'm here as a developer.
                 
-                <span class="lineBreak">I am a perfectionist; I would try my hardest to make a website pixel-perfect. I am also willing to adapt to new
-                frameworks, languages, and technologies as necessary.</span>
+                <span class="lineBreak">Knowing myself, I would try my hardest to make a website pixel-perfect. I am also willing to adapt to new frameworks,
+                languages, and technologies as necessary.</span>
                 
-                Technology opened up all kinds of possibilities for me. Today, it helps me in many more ways, and I want to help do the same for others. Let's work together!
+                Technology has helped me more than I could ever imagine, and I want to help do the same for others. Let's work together!
             </p>
         </div>
     </section>
     <!-- PROJECTS.EXE -->
     <section class="projects hidden">
-        <div class="containerbar padded">
+        <div class="containerbar padded extra">
             <h3>Projects.exe</h3>
+            <i class="fa-solid fa-rectangle-xmark projectX"></i>
         </div>
         <div class="projectWrapper scroller">
             <section>
                 <div class="one">
-                    <span>Scroll down for more!</span>
+                    <span>Scroll down for more projects!</span>
+                    <div class="technologies">
+                        <ul class="techIcons">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-js"></i></li>
+                            <li><i class="fa-brands fa-git"></i></li>
+                            <li><i class="fa-brands fa-github github"></i></li>
+                        </ul>
+                    </div>
                     <img class="fleximg" src="assets/images/kcasie.github.io_source-wireframe_.png" alt="#">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quis fugit velit. Ex mollitia magnam minus rerum esse enim porro, beatae dignissimos, quas tenetur nemo voluptate eum quia hic! Magni.</p>
+                    <p>Coded from scratch with HTML and CSS.</p>
                     <div>
                         <a href="https://kcasie.github.io/source-wireframe/" target="_blank" class="button-30">Demo</a>
                         <a href="https://github.com/KCasie/source-wireframe" target="_blank" class="button-30">Github</a>
@@ -83,8 +98,7 @@
                 </div>
                 <div class="two">
                     <img class="fleximg" src="assets/images/kcasie.github.io_hair-salon_.png" alt="#">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quis fugit velit. Ex mollitia magnam minus rerum
-                    esse enim porro, beatae dignissimos, quas tenetur nemo voluptate eum quia hic! Magni.</p>
+                    <p>Coded from scratch with HTML and CSS. One of my favorites!</p>
                     <div>
                         <a href="https://kcasie.github.io/hair-salon/" target="_blank" class="button-30">Demo</a>
                         <a href="https://github.com/KCasie/hair-salon" target="_blank" class="button-30">Github</a>
@@ -94,8 +108,7 @@
             <section>
                 <div class="three">
                     <img class="fleximg" src="assets/images/kcasie.github.io_coffee-restaurant_.png" alt="#">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quis fugit velit. Ex mollitia magnam minus rerum
-                    esse enim porro, beatae dignissimos, quas tenetur nemo voluptate eum quia hic! Magni.</p>
+                    <p>Coded from scratch with HTML and CSS.</p>
                     <div>
                         <a href="https://kcasie.github.io/coffee-restaurant/" target="_blank" class="button-30">Demo</a>
                         <a href="https://github.com/KCasie/coffee-restaurant" target="_blank" class="button-30">Github</a>
@@ -103,18 +116,51 @@
                 </div>
                 <div class="four">
                     <img class="fleximg" src="assets/images/kcasie.github.io_level-ground_.png" alt="#">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quis fugit velit. Ex mollitia magnam minus rerum
-                    esse enim porro, beatae dignissimos, quas tenetur nemo voluptate eum quia hic! Magni.</p>
+                    <p>Coded from scratch with HTML and CSS.</p>
                     <div>
                         <a href="https://kcasie.github.io/level-ground/" target="_blank" class="button-30">Demo</a>
                         <a href="https://github.com/KCasie/level-ground" target="_blank" class="button-30">Github</a>
                     </div>
                 </div>
+                <div class="five">
+                    <img class="fleximg" src="assets/images/kcasie.github.io_my-portfolio_.png" alt="#">
+                    <p>Created by me with HTML, CSS, JavaScript</p>
+                    <div>
+                        <a href="https://github.com/KCasie/my-portfolio" target="_blank" class="button-30">Github</a>
+                    </div>
+                </div>
             </section>
         </div>
     </section>
-
-
+    <!-- CONTACT.EXE -->
+    <section class="contact hidden">
+        <div class="containerbar shorter extra">
+            <h3 class="heading">Contact.exe</h3>
+            <i class="fa-solid fa-rectangle-xmark contactX"></i>
+        </div>
+        <div class="contactWrapper">
+            <section class="contactInfo">
+                <a href="https://twitter.com/KCasie_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/katrina-n-313324230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/KCasie" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </section>
+            <form action="#" method="post" enctype="text/plain">
+                <span class="warning">Warning! Under construction</span>
+                <label for="user">Name: </label>
+                <input id="user" type="text">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="text">Message:</label>
+                <textarea name="text" id="text" cols="40" rows="10"></textarea>
+                <input type="submit" value="submit" class="button-30 smol">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <span class="footer">Coded by KCasie with love and caffeination.</span>
+        <small>2022 &#169; All rights reserved</small>
+    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>

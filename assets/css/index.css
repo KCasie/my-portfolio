@@ -13,7 +13,7 @@ body {
 
 /* DRY */
 
-nav, .homeWrapper, .projectWrapper, .desktop, .projectWrapper div {
+nav, .homeWrapper, .projectWrapper, .desktop, .projectWrapper div, .contactWrapper, form {
   display: flex;
 }
 
@@ -23,6 +23,7 @@ nav {
   background-color: pink;
   font-family: 'Press Start 2P', cursive;
   padding: 2px;
+  justify-content: space-between;
 }
 
 li {
@@ -32,6 +33,14 @@ li {
 
 .far {
   color: #1c4656;
+}
+
+.local {
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-weight: 700; */
+  padding-right: 1%;
+  /* flex-basis: 50%; */
+  flex-wrap: nowrap;
 }
 
 /* Home.exe Section */
@@ -56,6 +65,18 @@ p {
   border-top-right-radius: 17px;
 }
 
+.extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-rectangle-xmark {
+  margin-right: 2%;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
 /* container below bar */
 
 .homeWrapper, .viewWrapper {
@@ -64,7 +85,7 @@ p {
   align-items: center;
   text-align: center;
   padding: 10% 10% 11% 10%;
-  margin: 0% 17% 10% 17%;
+  margin: 0% 17% 0% 17%;
   border: 7px inset white;
 }
 
@@ -74,19 +95,31 @@ p {
 }
 
 .viewSection .short {
-  margin: 5% 27% 0 27%;
+  margin: 6% 27% 0 27%;
 }
 
 .projectWrapper {
   background-color: rgba(45, 35, 66, 0.3);
   flex-wrap: wrap;
-  padding: 1% 4%;
+  padding: 0 3%;
   margin: 0% 26% 10% 26%;
   border: 7px inset white;
 }
 
 .projects .padded {
-  margin: 6% 26% 0% 26%;
+  margin: 5% 26% 0% 26%;
+}
+
+.contactWrapper {
+  background-color: rgba(45, 35, 66, 0.3);
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 33% 10% 33%;
+  border: 7px inset white;
+}
+
+.shorter {
+  margin: 6.5% 33% 0 33%;
 }
 
 /* Desktop */
@@ -216,7 +249,7 @@ li {
 }
 
 .projectWrapper span {
-  padding-bottom: 3%;
+  padding-top: 3%;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8rem;
 }
@@ -231,13 +264,113 @@ li {
 }
 
 .scroller {
-  height: 60vh;
+  height: 65vh;
   overflow-y: scroll;
 }
 
-.one, .two, .three, .four {
+.one, .two, .three, .four, .five {
   flex-direction: column;
   align-items: center;
+}
+
+.technologies {
+  background: #36395a6b;
+  font-size: 2.5rem;
+  cursor: default;
+}
+
+.techIcons {
+  margin: 0;
+  padding: 0;
+}
+
+.one .technologies {
+  padding: 1% 2%;
+  margin: 3% 0;
+}
+
+.techIcons .fa-brands {
+  cursor: default;
+}
+
+.fa-html5 {
+  color: #f16524;
+}
+
+.fa-css3-alt {
+  color: #33a7dd;
+}
+
+.fa-js {
+  color: #f7e018;
+}
+
+.fa-git {
+  color: white;
+}
+
+.github {
+  color: #728295;
+}
+
+/* contact.exe extras */
+
+.contactInfo {
+  margin: 4% 5%;
+  padding: 0 5%;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+}
+
+form {
+  background: #36395a6b;
+  margin: 0 5% 8% 5%;
+  padding: 4% 5%;
+  flex-direction: column;
+}
+
+input {
+  margin: 5% 0;
+  padding: 3% 0;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+textarea {
+  margin: 4% 0;
+}
+
+.smol {
+  margin: 3% 29% 0 29%;
+}
+
+.warning {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  font-weight: 500;
+}
+
+/* .footer {
+  display: block;
+} */
+
+small {
+  right: 0;
 }
 
 /* javascript extras */
@@ -248,7 +381,19 @@ li {
 
 /* media queries */
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1222px) {
+  .contactWrapper {
+    margin: 0 20% 0 20%;
+  }
+  .contact .shorter {
+    margin: 5% 20% 0 20%;
+  }
+}
+
+@media all and (max-width: 946px) {
+  .local {
+    display: none;
+  }
   .desktop {
     margin: 0 auto;
     position: relative;
@@ -272,6 +417,9 @@ li {
   }
   .viewSection .short {
     margin: 0 8%;
+  }
+  .contact .shorter {
+    margin-top: 0;
   }
   .mobile {
     display: block;
