@@ -84,3 +84,40 @@ function toggleXProject() {
 function toggleXContact() {
     help.classList.toggle('hidden');
 }
+
+
+// NAV MEDIA QUERY
+
+// hide current navbar --- done 
+
+// replace crescent with mobile {windows} icon --- done
+
+// have navbar be column --- done 
+
+// smurf on windows icon for toggle hidden
+
+document.querySelector('.fa-window-restore').addEventListener('click', toggleNav); 
+
+let nav = document.querySelector('.navigation');
+
+function toggleNav() {
+
+    // grab values from nav lis
+    let homeLi = document.querySelector('.home');
+    let viewLi = document.querySelector('.view');
+    let editLi = document.querySelector('.edit');
+    let helpLi = document.querySelector('.help');
+    let navbar = document.querySelector('nav');
+    // change text of lis 
+
+    homeLi.textContent = 'Home';
+    viewLi.textContent = 'View';
+    editLi.textContent = 'Edit';
+    helpLi.textContent = 'Help';
+    nav.style.display = 'flex';
+    navbar.style.display = 'flex';
+    let icon = document.querySelector('.fa-window-restore');
+
+    icon.classList.toggle('hidden');
+    navbar.classList.toggle('hidden');
+}
